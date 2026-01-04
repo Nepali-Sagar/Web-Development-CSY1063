@@ -1,4 +1,106 @@
-nav a:nth-child(5){
-    opacity: 1;
-    font-size: 5em;
+@font-face {
+  font-family: roboto;
+  src: url(/assets/font/Roboto.ttf);
+}
+
+nav a:nth-child(5) {
+  opacity: 1;
+  font-size: 5em;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+main p {
+  width: 40%;
+  text-transform: uppercase;
+  font-size: 8em;
+  margin-left: 50px;
+  font-family: gravelo;
+  color: rgb(63, 185, 226);
+}
+
+form {
+  width: 60%;
+  height: 100%;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+form input,
+form textarea,
+form button {
+  height: 10%;
+  font-family: gravelo;
+  font-size: 3em;
+  padding-left: 20px;
+  border: 3px solid black;
+  color: lightblue;
+  letter-spacing: 4px;
+  background-color: transparent;
+}
+
+form input:nth-child(2){
+    font-family: roboto;
+}
+
+form input:hover,
+form textarea:hover{
+    border: 5px solid black;
+}
+::placeholder{
+    color: white;
+    opacity: 0.8;
+}
+
+form textarea {
+  height: 30%;
+  padding-top: 10px;
+}
+
+form button:hover {
+  color: rgb(91, 189, 222);
+  background-color: white;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  font-family: gravelo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line p {
+  font-size: 1em;
+  position: relative;
+  left: 150px;
+  opacity: 0.5;
+}
+
+div {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+div img {
+  width: 50px;
+}
+
+div img:hover {
+  scale: 1.1;
 }

@@ -1,62 +1,65 @@
 @font-face {
-    font-family: gravelo;
-    src: url(assets/font/Gravelo.otf);
+  font-family: gravelo;
+  src: url(assets/font/Gravelo.otf);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
-body{
-    width: 100%;
-    height: 100%;
-    color: white;
+body {
+  width: 100%;
+  height: 100%;
+  color: white;
 }
 
-body{
-    background-image: url(assets/img/blue-Background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+body {
+  background-image: url(assets/img/blue-Background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% auto;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% auto;
+  grid-template-areas:
     "header header header"
     "main main main";
 }
 
-header{
-    grid-area: header;
+header {
+  grid-area: header;
 }
 
-nav{
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 60px;
 }
 
-nav a{
-    font-size: 4.8em;
-    color: white;
-    text-decoration: none;
-    font-family: gravelo;
-    letter-spacing: 3px;
-    opacity: 0.5;
-    transition: opacity, font-size 0.2s ease-out;
+nav a {
+  font-size: 4.8em;
+  color: white;
+  text-decoration: none;
+  font-family: gravelo;
+  letter-spacing: 3px;
+  opacity: 0.5;
+  transition: opacity, font-size 0.2s ease-out;
 }
 
-nav a:hover{
-    opacity: 1;
-    font-size: 4.9em;
-    transition: all 0.2s ease-in;
+nav a:hover {
+  opacity: 1;
+  color: lightblue;
+  font-size: 4.9em;
+  transition: all 0.2s ease-in;
 }
 
-
-main{
-    grid-area: main;
+main {
+  grid-area: main;
 }

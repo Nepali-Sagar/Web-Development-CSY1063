@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/style/contact.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/style/contact.css" />
     <title>Contact</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="/index.html">HOME</a>
-            <a href="project.html">PROJECT</a>
-            <a href="report.html">REPORT</a>
-            <a href="demo.html">DEMO</a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
+      <nav>
+        <a href="/index.html">HOME</a>
+        <a href="project.html">PROJECT</a>
+        <a href="report.html">REPORT</a>
+        <a href="demo.html">DEMO</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
     </header>
 
-    <main></main>
-</body>
+    <main>
+      <p>let's code together</p>
+      <form
+        action="mailto:sagarnepali0960@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <input type="text" placeholder="FULL NAME" required />
+        <input type="text" placeholder="PHONE NUMBER" />
+        <input type="text" placeholder="GMAIL" required />
+        <textarea
+          type="text"
+          required
+          name="message"
+          placeholder="DESCRIBE THE PROJECT"
+        ></textarea>
+        <button type="submit">Submit</button>
+        <div class="line">
+          <p>OR</p>
+        </div>
+
+        <div>
+                      <a
+            href="https://www.linkedin.com/in/sagar-nepali-343a18384/"
+            target="_blank"
+            ><img src="/assets/icons/linkedin.png" alt=""
+          /></a>
+          <a href="https://github.com/Nepali-Sagar" target="_blank"
+            ><img src="/assets/icons/github.png" alt=""
+          /></a>
+
+        </div>
+      </form>
+    </main>
+  </body>
 </html>
