@@ -1,0 +1,55 @@
+@font-face {
+    font-family: gravelo;
+    src: url(assets/font/Gravelo.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-image: url(assets/img/blue-Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% auto;
+    grid-template-areas: 
+    "header header header"
+    "main main main";
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    font-size: 5em;
+    color: white;
+    text-decoration: none;
+    font-family: gravelo;
+    letter-spacing: 1.5px;
+}
+
+
+
+
+main{
+    grid-area: main;
+}
