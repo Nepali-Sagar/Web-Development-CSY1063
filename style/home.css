@@ -1,38 +1,63 @@
-nav a:first-child{
-    opacity: 1;
-    font-size: 5em;
+nav a:first-child {
+  opacity: 1;
+  font-size: 5em;
 }
 
-.home-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.home-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-section{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.main-text {
+  height: 95%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-section p{
-    font-family: gravelo;
-    font-size: 20em;
-    animation: fontCase 4s ease-in-out infinite;
+.main-text p {
+  font-family: gravelo;
+  font-size: 20em;
+  opacity: 0.9;
+  text-transform: uppercase;
+  animation: fontCase 5s ease-out infinite;
 }
 
-section p:nth-child(2){
-    margin-top: -100px;
+.main-text p:nth-child(2) {
+  margin-top: -100px;
 }
 
 @keyframes fontCase {
-    from{
-        text-transform: lowercase;
-    }
-    to{
-        text-transform: uppercase;
-    }
+  from {
+    text-transform: lowercase;
+  }
+  to {
+    text-transform: uppercase;
+  }
+}
+
+.lower-text {
+  width: 100%;
+  height: 8%;
+}
+
+.lower-text section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding-right: 10px;
+}
+
+.lower-text section p {
+  font-family: gravelo;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: lightblue;
 }
