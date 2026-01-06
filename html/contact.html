@@ -8,6 +8,9 @@
     <title>Contact</title>
   </head>
   <body>
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="/assets/video/background5.mp4" type="video/mp4" />
+    </video>
     <header>
       <nav>
         <div class="left-side">
@@ -24,36 +27,46 @@
     </header>
 
     <main>
-      <p>let's code together</p>
       <form
         action="mailto:sagarnepali0960@gmail.com"
         method="post"
         enctype="text/plain"
       >
-        <input type="text" placeholder="FULL NAME" required />
-        <input type="text" placeholder="PHONE NUMBER" />
-        <input type="text" placeholder="GMAIL" required />
-        <textarea
-          type="text"
-          required
-          name="message"
-          placeholder="DESCRIBE THE PROJECT"
-        ></textarea>
-        <button type="submit">Submit</button>
-        <div class="line">
-          <p>OR</p>
-        </div>
+        <fieldset>
+          <legend>let's code together</legend>
 
-        <div class="social-media-link">
-          <a
-            href="https://www.linkedin.com/in/sagar-nepali-343a18384/"
-            target="_blank"
-            ><img src="/assets/icons/linkedin.png" alt=""
-          /></a>
-          <a href="https://github.com/Nepali-Sagar" target="_blank"
-            ><img src="/assets/icons/github.png" alt=""
-          /></a>
-        </div>
+          <input
+            class="input-text"
+            type="text"
+            name="Full Name"
+            placeholder="Full Name"
+            required
+          />
+
+          <input
+            class="input-text"
+            type="text"
+            name="Phone Number"
+            placeholder="Phone Number"
+          />
+
+          <input
+            class="input-text"
+            type="email"
+            name="Email"
+            placeholder="Gmail"
+            required
+          />
+
+          <textarea
+            class="input-textarea"
+            name="Message"
+            placeholder="Describe The Project"
+            required
+          ></textarea>
+
+          <button class="input-submit" type="submit">Submit</button>
+        </fieldset>
       </form>
     </main>
   </body>
