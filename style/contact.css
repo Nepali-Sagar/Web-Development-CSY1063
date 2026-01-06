@@ -3,11 +3,6 @@
   src: url(/assets/font/Roboto.ttf);
 }
 
-nav a:nth-child(5) {
-  opacity: 1;
-  font-size: 5em;
-}
-
 main {
   display: flex;
   flex-direction: row;
@@ -88,7 +83,7 @@ form button:hover {
   opacity: 0.5;
 }
 
-div {
+.social-media-link {
   width: 100%;
   height: 100px;
   display: flex;
@@ -97,10 +92,10 @@ div {
   gap: 20px;
 }
 
-div img {
+.social-media-link img {
   width: 50px;
 }
 
-div img:hover {
+.social-media-link img:hover {
   scale: 1.1;
 }
