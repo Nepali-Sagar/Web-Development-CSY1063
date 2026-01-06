@@ -3,22 +3,12 @@
   src: url(/assets/font/Dirtyline.otf);
 }
 
-nav a:first-child {
-  position: relative;
-  right: 70%;
-  text-decoration: none;
-}
-
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-}
-
-.main-text {
-  position: relative;
-  left: 5%;
+  padding-left: 30px;
 }
 
 .main-text p {
@@ -39,7 +29,6 @@ main {
 .text {
   font-family: dirtyline;
   position: relative;
-  left: 5%;
   bottom: 2%;
   background-color: orange;
 }
@@ -52,16 +41,12 @@ main {
 }
 
 .divider {
-  position: relative;
-  left: 5%;
   margin-bottom: 15px;
   width: 55%;
   border: 0.5px solid hsl(39, 100%, 50%, 0.3);
 }
 
 .quoto {
-  position: relative;
-  left: 5%;
   cursor: default;
 }
 

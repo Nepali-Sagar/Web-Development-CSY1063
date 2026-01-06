@@ -55,9 +55,8 @@ header {
 nav {
   height: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
-  gap: 30px;
 }
 
 nav a {
@@ -68,8 +67,14 @@ nav a {
   letter-spacing: 1px;
 }
 
-nav a:last-child {
+.left-side{
+  margin-left: 30px;
+}
+
+.right-side {
   margin-right: 30px;
+  display: flex;
+  gap: 20px;
 }
 
 nav a:hover {
