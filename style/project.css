@@ -1,3 +1,26 @@
+@font-face {
+  font-family: dirtyline;
+  src: url(/assets/font/Dirtyline.otf);
+}
+
+.project-heading{
+  z-index: 100;
+  position: relative;
+  left: 44%;
+  top: 40%;
+  scale: 13;
+  width: 4%;
+  font-family: dirtyline;
+  animation: heading-ani 5s ease-in-out forwards;
+}
+
+@keyframes heading-ani {
+  to{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -19,17 +42,26 @@ main {
   width: 30%;
   height: 85%;
   scale: 0.9;
-  opacity: 0.4;
+  opacity: 0.6;
   filter: blur(20px);
+  text-align: center;
   transition: all 1.5s ease-in-out;
 }
 
+.project01 p,
+.project02 p,
+.project03 p{
+  font-family: dirtyline;
+  scale: 10;
+  opacity: 1;
+} 
+
 .project01 {
-  transform: rotateY(-6deg);
+  transform: rotateY(6deg);
 }
 
 .project03 {
-  transform: rotateY(6deg);
+  transform: rotateY(-6deg);
 }
 
 .project01:hover,
@@ -38,7 +70,6 @@ main {
   scale: 1;
   opacity: 1;
   filter: blur(0px);
-  transform: rotateY(0);
   transition: all 1.5s ease-in-out;
   
 }
