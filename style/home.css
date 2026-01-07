@@ -3,6 +3,16 @@
   src: url(/assets/font/Dirtyline.otf);
 }
 
+body {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 5% auto 5%;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  overflow: hidden;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -83,6 +93,11 @@ main {
   padding: 15px;
   text-transform: lowercase;
   border-radius: 20px;
+}
+
+footer {
+  grid-area: footer;
+  animation: background-animation 2s ease-in;
 }
 
 footer {

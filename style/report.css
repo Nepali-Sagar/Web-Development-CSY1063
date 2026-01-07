@@ -1,45 +1,141 @@
-body{
-    height: 200%;
-    overflow: auto;
+html {
+  scroll-padding-top: 250px;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 200%;
+  overflow: auto;
+}
+
+header {
+  animation-duration: 1s;
+}
+
+nav {
+  background-color: black;
 }
 
 main {
   display: flex;
-  justify-content: center;
-  align-items: start;
+  animation-duration: 1s;
 }
 
-.side-bar{
-    height: 100%;
-    width: 20%;
-    background-color: rgb(108, 107, 107);
-    position: fixed;
-    left: 0;
+.side-space-left {
+  height: 100%;
+  width: 20%;
 }
 
-.content{
-    height: 100%;
-    width: 80%;
-    background-color: olive;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 10%;
+/* content */
+
+.content {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 150px;
 }
 
-.content section{
-    width: 100%;
-    height: 30%;
+.content-title {
+  width: 100%;
+  height: 3%;
 }
 
-.content1{
-    background-color: red;
+.content-title h1 {
+  font-size: 3.5em;
+  height: 100%;
+  border-bottom: 1px solid white;
 }
 
-.content2{
-    background-color: gold;
+.content1,
+.content2,
+.content3,
+.content4,
+.content5,
+.content6,
+.content7 {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 0px;
+  padding: 20px 20px 10px 0px;
 }
 
-.content3{
-    background-color: blue;
+.content-heading {
+  font-family: gravelo;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  width: 20px;
+  font-size: 2em;
+}
+
+.content-text {
+  font-size: 1.4em;
+}
+
+#content1 {
+  background-color: red;
+}
+#content2 {
+  background-color: rgb(43, 3, 242);
+}
+#content3 {
+  background-color: rgb(136, 13, 185);
+}
+#content4 {
+  background-color: rgb(2, 123, 83);
+}
+#content5 {
+  background-color: rgb(219, 169, 4);
+}
+#content6 {
+  background-color: gray;
+}
+#content7 {
+  background-color: green;
+}
+
+/* sidebar */
+
+.side-bar {
+  position: fixed;
+  width: 260px;
+  height: auto;
+  right: 55px;
+  top: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar-title {
+  padding: 6px;
+}
+.side-bar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.side-bar ul li {
+  list-style: none;
+  padding: 6px;
+  width: 100%;
+}
+
+.side-bar ul li a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: all 1s ease-in-out;
+}
+
+.side-bar ul li a:hover {
+  opacity: 1;
+  font-size: 1.01em;
+  transition: all 0.2s ease-in-out;
 }

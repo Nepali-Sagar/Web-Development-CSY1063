@@ -20,12 +20,10 @@ body {
   background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 5% auto 5%;
+  grid-template-rows: 5% auto;
   grid-template-areas:
     "header header header"
-    "main main main"
-    "footer footer footer";
-  overflow: hidden;
+    "main main main";
 }
 
 video {
@@ -89,7 +87,4 @@ main {
   animation: background-animation 2s ease-in;
 }
 
-footer {
-  grid-area: footer;
-  animation: background-animation 2s ease-in;
-}
+
