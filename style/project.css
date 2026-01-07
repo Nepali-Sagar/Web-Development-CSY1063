@@ -3,19 +3,20 @@
   src: url(/assets/font/Dirtyline.otf);
 }
 
-.project-heading{
+.project-heading {
   z-index: 100;
   position: relative;
-  left: 44%;
+  left: 47.5%;
   top: 40%;
-  scale: 13;
-  width: 4%;
+  transform: scale(10);
+  width: 5%;
+  text-align: center;
   font-family: dirtyline;
   animation: heading-ani 5s ease-in-out forwards;
 }
 
 @keyframes heading-ani {
-  to{
+  to {
     opacity: 0;
     visibility: hidden;
   }
@@ -36,25 +37,45 @@ main {
   perspective: 500px;
 }
 
+.project01 img,
+.project02 img,
+.project03 img {
+  opacity: 0.4;
+  filter: blur(20px);
+  transition: all 1.5s ease-in-out;
+}
+
+.project01:hover img,
+.project02:hover img,
+.project03:hover img {
+  opacity: 1;
+  filter: blur(0);
+}
+
 .project01,
 .project02,
 .project03 {
   width: 30%;
   height: 85%;
   scale: 0.9;
-  opacity: 0.6;
-  filter: blur(20px);
   text-align: center;
   transition: all 1.5s ease-in-out;
+  position: relative;
 }
 
 .project01 p,
 .project02 p,
-.project03 p{
+.project03 p {
+  position: absolute;
+  bottom: -0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(10);
+  opacity: 0.5;
+  margin: 0;
+  pointer-events: none;
   font-family: dirtyline;
-  scale: 10;
-  opacity: 1;
-} 
+  z-index: 2;
+}
 
 .project01 {
   transform: rotateY(6deg);
@@ -71,13 +92,10 @@ main {
   opacity: 1;
   filter: blur(0px);
   transition: all 1.5s ease-in-out;
-  
 }
 
 .main-project section img {
   width: 100%;
   height: 100%;
   border-radius: 15px;
- 
 }
-
