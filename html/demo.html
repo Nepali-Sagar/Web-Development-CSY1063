@@ -8,6 +8,9 @@
     <title>Project</title>
   </head>
   <body>
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="/assets/video/background4.mp4" type="video/mp4" />
+    </video>
     <header>
       <nav>
         <div class="left-side">
@@ -24,16 +27,10 @@
     </header>
 
     <main>
-      <section class="videoInfo">
-        <h1>Code Walkthrough</h1>
-        <p>
-          A short demo explaining how the code is structured, how each part
-          works, and the logic behind key decisions.
-        </p>
-      </section>
-      <video controls autoplay muted loop>
-        <source src="/assets/video/background.mp4" type="video/mp4" />
+      <video class="demo-video" controls>
+        <source src="/assets/video/background.mp4" />
       </video>
+      <p class="text">CSY1063 Web Development Demo Video</p>
     </main>
   </body>
 </html>
