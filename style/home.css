@@ -163,7 +163,7 @@ footer {
   opacity: 0.5;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   html{
     overflow: hidden;
   }
