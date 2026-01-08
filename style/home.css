@@ -9,7 +9,7 @@ body {
 }
 
 .background-video {
-  opacity: 0.4;
+  opacity: 0.8;
   animation: none;
 }
 
@@ -17,62 +17,59 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 
 /* main container */
 .container {
-  width: 100%;
-  height: 80%;
+  width: 50%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: scale(1.2);
 }
 
 /* main container name-section, sagar nepali */
 .name-section {
-  width: 50%;
-  height: 80%;
-  text-align: center;
+  width: 100%;
+  height: 85%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
 }
 
 .name-section p {
-  max-width: 100%;
-  height: 50%;
+  width: 100%;
+  height: auto;
   font-family: gravelo;
-  font-size: 17em;
-  text-transform: uppercase;
-}
-.name-section p:first-child {
-  padding-top: 50px;
+  font-size: 10em;
+  text-align: center;
+  transform: scale(1.5);
+
 }
 
 /* main container text-case */
 .text-case {
-  width: 40%;
-  height: 10%;
+  width: 100%;
+  height: 15%;
   font-family: dirtyline;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  z-index: 20;
 }
 
 .text-case p {
-  width: 50%;
+  width: 40%;
   height: 100%;
-  font-size: 2.5em;
+  font-size: 2em;
   text-transform: uppercase;
   text-align: center;
   align-content: center;
-  opacity: 0.9;
-  border-radius: 2px;
+  opacity: 1;
 }
 
 .text-case p:first-child {
@@ -88,14 +85,14 @@ main {
 /* main container quoto */
 .quoto {
   cursor: default;
-  width: 50%;
+  width: 100%;
   height: 10%;
 }
 
 .quoto p {
   padding-top: 20px;
   height: 100%;
-  font-size: 1.7em;
+  font-size: 1.3em;
   font-family: dirtyline;
   text-align: center;
 }
@@ -147,12 +144,12 @@ footer {
 /* about me  */
 .about-me-text {
   font-family: roboto;
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: right;
   width: 740px;
   height: auto;
   position: relative;
-  bottom: 100px;
+  bottom: 50px;
   right: -2%;
   opacity: 0;
   transition: opacity 0.3s ease-in;
@@ -163,43 +160,34 @@ footer {
 }
 
 .about-me:hover + .about-me-text {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 @media (max-width: 800px) {
-  .name-section {
+  html{
+    overflow: hidden;
+  }
+  .container{
     width: 100%;
-    height: 60%;
+    height: 50%;
+  }
+  .name-section {
     justify-content: center;
+    padding-top: 50px;
   }
   .name-section p {
-    font-size: 6em;
-  }
-
-  .name-section p:first-child {
-    margin-top: 60px;
+    font-size: 4em;
   }
 
   .text-case {
-    width: 100%;
-    height: 10%;
     flex-direction: row;
-    gap: 5px;
   }
 
   .text-case p {
-    font-size: 1.7em;
+    font-size: 1.3em;
     text-transform: lowercase;
   }
-  .text-case p:first-child {
-    width: 45%;
-    margin-left: 30px;
-  }
 
-  .text-case p:last-child {
-    width: 55%;
-    margin-right: 30px;
-  }
   .text-case p:hover {
     transition: none;
   }
@@ -211,19 +199,19 @@ footer {
 
   .quoto p {
     width: 100%;
-    font-size: 1.2em;
+    font-size: 0.6em;
     opacity: 0.7;
     font-style: italic;
   }
 
   .quoto-hover-box {
     opacity: 1;
-    bottom: 9ch;
+    top: -140%;
     transition: none;
   }
   .quoto-hover-box p {
     opacity: 1;
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
 
   .about-me {
@@ -231,10 +219,10 @@ footer {
   }
 
   .about-me-text {
-    font-size: 1em;
+    font-size: 0.7em;
     bottom: 60px;
     right: -30px;
-    opacity: 0.5;
-    text-align: right;
+    opacity: 0.8;
+    text-align: left;
   }
 }

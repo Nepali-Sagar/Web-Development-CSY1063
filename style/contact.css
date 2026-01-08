@@ -1,6 +1,6 @@
 body {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 10% auto;
+  grid-template-rows: 5% auto;
   grid-template-areas:
     "header header header"
     "main main main";
@@ -50,16 +50,16 @@ legend {
 
 ::placeholder {
   color: black;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .input-text,
 .input-textarea,
 .input-submit {
-  width: 80%;
+  width: 60%;
   height: 11%;
   font-family: amoreChristmas;
-  font-size: 3em;
+  font-size: 1.5em;
   padding-top: 7px;
   padding-left: 20px;
   border: 0px solid black;
@@ -80,6 +80,7 @@ input:focus,
 }
 
 .input-submit {
+    font-size: 2em;
   color: black;
   font-family: gravelo;
   padding-top: 5px;
@@ -99,13 +100,11 @@ input:focus,
   form {
     width: 90%;
     height: 90%;
-  }
-
-  fieldset {
-    width: 50%;
+    padding-top: 50px;
   }
 
   legend {
+    margin-bottom: 0px;
     font-size: 3em;
   }
 

@@ -16,6 +16,8 @@ body {
 /* Main */
 main {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* three major project highlist */
@@ -29,79 +31,63 @@ main {
   overflow: hidden;
 }
 
-.project01,
-.project02,
-.project03 {
-  width: 30%;
-  height: 90%;
+.project-list section {
+  width: 22%;
+  height: 80%;
+  transform: scale(0.8);
   text-align: center;
-  scale: 0.9;
   background-color: black;
-  border-radius: 25px;
-  transition: all 1s ease-in-out;
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
   animation: bottom_to_origin 2s ease-in-out;
+}
+.project-list section:hover {
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+
+.project01:hover {
+  filter: drop-shadow(0 0 20px blue);
 }
 
 .project02:hover {
-  scale: 1;
-  filter: drop-shadow(0 0 10px red);
-  transition: all 1s ease-in-out;
+  filter: drop-shadow(0 0 20px red);
 }
 
-.project01 {
-  transform: rotateY(7deg);
-  transition: all 1s ease-in-out;
-}
-.project01:hover {
-  scale: 1;
-  filter: drop-shadow(0 0 10px blue);
-  transform: rotateY(3deg);
-  transition: all 1s ease-in-out;
-}
-
-.project03 {
-  transform: rotateY(-7deg);
-  transition: all 1s ease-in-out;
-}
 .project03:hover {
-  scale: 1;
-  filter: drop-shadow(0 0 10px green);
-  transform: rotateY(-3deg);
-  transition: all 1s ease-in-out;
+  filter: drop-shadow(0 0 20px green);
 }
 
-.project01 img,
-.project02 img,
-.project03 img {
+.project04:hover {
+  filter: drop-shadow(0 0 20px rgb(45, 239, 249));
+}
+
+.project-list section img {
   width: 100%;
   height: 100%;
   opacity: 0.5;
-  border-radius: 25px;
+  border-radius: 50px;
   object-fit: cover;
   filter: blur(12px);
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.project01:hover img,
-.project02:hover img,
-.project03:hover img {
+.project-list section:hover img {
   opacity: 1;
   filter: blur(0);
 }
 
-.project01 p,
-.project02 p,
-.project03 p {
+.project-list section p {
   position: relative;
   bottom: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(5);
+  transform: translate(-50%, -50%) scale(3);
   font-size: 1em;
   opacity: 0.7;
   margin: 0;
   font-family: dirtyline;
   z-index: 2;
-  animation: bottom_to_origin 3s ease-in-out;
+  animation: bottom_to_origin 1s ease-in-out;
 }
 
 @keyframes bottom_to_origin {
@@ -114,20 +100,12 @@ main {
   }
 }
 
-.project01 img:hover + p,
-.project02 img:hover + p,
-.project03 img:hover + p {
-  opacity: 0;
-  transition: all 1s ease-in-out;
-}
-
 @media (max-width: 768px) {
   html {
     scroll-behavior: smooth;
   }
   body {
     overflow: scroll;
-    scroll-behavior: smooth;
     height: 220%;
   }
 
@@ -136,21 +114,15 @@ main {
   }
   .project-list {
     flex-direction: column;
-    height: 100%;
   }
 
-  .project01,
-  .project02,
-  .project03 {
-    width: 80%;
+  .project-list section {
+    width: 90%;
     height: auto;
-    transform: rotateY(0deg);
   }
 
-  .project01:hover,
-  .project02:hover,
-  .project03:hover {
-    transform: rotateY(0deg);
+  .project-list section:hover {
+    transform: scale(0.8);
   }
   .project01 {
     filter: drop-shadow(0 0 15px rgb(30, 30, 244));
@@ -161,17 +133,16 @@ main {
   .project03 {
     filter: drop-shadow(0 0 15px rgb(45, 249, 45));
   }
-
-  .project01 img,
-  .project02 img,
-  .project03 img {
-    filter: blur(0);
-    opacity: 0.9;
+  .project04 {
+    filter: drop-shadow(0 0 15px rgb(45, 239, 249));
   }
 
-  .project01 p,
-  .project02 p,
-  .project03 p {
+  .project-list section img {
+    filter: blur(0);
+    opacity: 1;
+  }
+
+  .project-list section p {
     font-size: 0.5em;
     opacity: 1;
     animation-duration: 1s;

@@ -8,7 +8,14 @@
     <title>Project</title>
   </head>
   <body>
-    <video class="background-video" autoplay muted loop playsinline preload="auto">
+    <video
+      class="background-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+    >
       <source src="/assets/video/background4.mp4" type="video/mp4" />
     </video>
     <header>
@@ -27,10 +34,21 @@
     </header>
 
     <main>
-      <video class="demo-video" controls>
-        <source src="/assets/video/background1.mp4" />
-      </video>
-      <p class="video-topic">CSY1063 Web Development Demo Video</p>
+      <section class="video-content">
+        <section class="video-section">
+          <video class="demo-video" controls>
+            <source src="/assets/video/background1.mp4" />
+          </video>
+        </section>
+        <section class="videoTitle-section">
+          <p class="video-title">CSY1063 Web Development Demo Video</p>
+        </section>
+
+        <section class="video-link">
+          <a href="#">youtube</a>
+          <a href="#">local</a>
+        </section>
+      </section>
     </main>
   </body>
 </html>
