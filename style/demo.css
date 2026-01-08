@@ -47,3 +47,25 @@ main {
   opacity: 0.5;
   transition: all 0.3s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  main {
+    gap: 30px;
+  }
+  .demo-video {
+    height: 50%;
+    width: 90%;
+    border-radius: 0;
+  }
+
+  .video-topic {
+    position: inherit;
+    opacity: 1;
+    transition: none;
+  }
+
+  .demo-video:hover + .video-topic{
+    opacity: 1;
+    transition: none;
+  }
+}

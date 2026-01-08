@@ -121,3 +121,42 @@ main {
   opacity: 0;
   transition: all 1s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    overflow: scroll;
+    height: 200%;
+  }
+
+  nav {
+    background-color: black;
+  }
+  .project-list {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .project01,
+  .project02,
+  .project03 {
+    width: 60%;
+    height: auto;
+    transform: rotateY(0deg);
+  }
+
+  .project01:hover,
+  .project02:hover,
+  .project03:hover {
+    transform: rotateY(0deg);
+  }
+
+  .project01 p,
+.project02 p,
+.project03 p {
+  font-size: 3em;
+  animation-duration: 1s;
+}
+}
