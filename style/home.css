@@ -38,18 +38,19 @@ main {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
 }
 
 .name-section p {
+  max-width: 100%;
+  height: 50%;
   font-family: gravelo;
   font-size: 17em;
   text-transform: uppercase;
-  line-height: 0.8;
 }
 .name-section p:first-child {
-  margin-top: 60px;
+  padding-top: 50px;
 }
 
 /* main container text-case */
@@ -116,9 +117,8 @@ main {
 
 .quoto-hover-box p {
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   text-transform: lowercase;
-  border-radius: 20px;
 }
 
 .quoto p:hover + .quoto-hover-box {
@@ -166,25 +166,42 @@ footer {
   opacity: 0.8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .name-section {
     width: 100%;
     height: 60%;
     justify-content: center;
   }
   .name-section p {
-    font-size: 12em;
+    font-size: 6em;
+  }
+
+  .name-section p:first-child {
+    margin-top: 60px;
   }
 
   .text-case {
     width: 100%;
-    height: 20%;
-    flex-direction: column;
+    height: 10%;
+    flex-direction: row;
     gap: 5px;
   }
 
   .text-case p {
-    font-size: 2em;
+    font-size: 1.7em;
+    text-transform: lowercase;
+  }
+  .text-case p:first-child {
+    width: 45%;
+    margin-left: 30px;
+  }
+
+  .text-case p:last-child {
+    width: 55%;
+    margin-right: 30px;
+  }
+  .text-case p:hover {
+    transition: none;
   }
 
   .quoto {
@@ -195,11 +212,29 @@ footer {
   .quoto p {
     width: 100%;
     font-size: 1.2em;
+    opacity: 0.7;
+    font-style: italic;
   }
 
-  .about-me-text{
+  .quoto-hover-box {
+    opacity: 1;
+    bottom: 9ch;
+    transition: none;
+  }
+  .quoto-hover-box p {
+    opacity: 1;
+    font-size: 0.8em;
+  }
+
+  .about-me {
+    visibility: hidden;
+  }
+
+  .about-me-text {
     font-size: 1em;
-    bottom: 50px;
-    right: -4%;
+    bottom: 60px;
+    right: -30px;
+    opacity: 0.5;
+    text-align: right;
   }
 }

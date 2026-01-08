@@ -1,6 +1,6 @@
 body {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 10% auto;
+  grid-template-rows: 5% auto;
   grid-template-areas:
     "header header header"
     "main main main";
@@ -115,6 +115,11 @@ main {
   }
 }
 
+.project-list{
+    gap: 0px;
+    justify-content: start;
+}
+
 .project01 img:hover + p,
 .project02 img:hover + p,
 .project03 img:hover + p {
@@ -128,7 +133,7 @@ main {
   }
   body {
     overflow: scroll;
-    height: 200%;
+    height: 250%;
   }
 
   nav {
@@ -142,7 +147,7 @@ main {
   .project01,
   .project02,
   .project03 {
-    width: 60%;
+    width: 80%;
     height: auto;
     transform: rotateY(0deg);
   }
@@ -154,9 +159,11 @@ main {
   }
 
   .project01 p,
-.project02 p,
-.project03 p {
-  font-size: 3em;
-  animation-duration: 1s;
-}
+  .project02 p,
+  .project03 p {
+    font-size: 3em;
+    font-size: 1em;
+    opacity: 1;
+    animation-duration: 1s;
+  }
 }

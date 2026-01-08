@@ -23,7 +23,7 @@ main {
 .demo-video {
   width: 90%;
   height: 90%;
-  background-color: red;
+  background-color: black;
   opacity: 1;
   z-index: 10;
   object-fit: cover;
@@ -50,17 +50,19 @@ main {
 
 @media (max-width: 768px) {
   main {
-    gap: 30px;
+    gap: 10px;
   }
   .demo-video {
-    height: 50%;
-    width: 90%;
+    height: 30%;
+    width: 95%;
     border-radius: 0;
   }
 
   .video-topic {
     position: inherit;
     opacity: 1;
+    font-size: 1.2em;
+    text-align: center;
     transition: none;
   }
 
