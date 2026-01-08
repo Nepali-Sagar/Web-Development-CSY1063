@@ -1,21 +1,15 @@
-@font-face {
-  font-family: amoreChristmas;
-  src: url(/assets/font/Amore\ Christmas.otf);
+body {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% auto;
+  grid-template-areas:
+    "header header header"
+    "main main main";
 }
 
-@font-face {
-  font-family: dirtyline;
-  src: url(/assets/font/Dirtyline.otf);
-}
-
-@font-face {
-  font-family: gravelo;
-  src: url(/assets/font/Gravelo.otf);
-}
-
-nav a {
-  color: black;
-  font-family: gravelo;
+.background-video {
+  opacity: 0.8;
+  animation: none;
+  transform: rotate(180deg);
 }
 
 main {
@@ -30,6 +24,9 @@ main {
 form {
   width: 60%;
   height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 fieldset {
@@ -38,7 +35,7 @@ fieldset {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   border: none;
   border-top: 5px solid black;
 }
@@ -53,14 +50,14 @@ legend {
 
 ::placeholder {
   color: black;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .input-text,
 .input-textarea,
 .input-submit {
   width: 80%;
-  height: 10%;
+  height: 11%;
   font-family: amoreChristmas;
   font-size: 3em;
   padding-top: 7px;
@@ -72,7 +69,8 @@ legend {
   border-bottom: 1px solid black;
 }
 
-input:focus, .input-textarea:focus {
+input:focus,
+.input-textarea:focus {
   outline: none;
 }
 
@@ -86,12 +84,13 @@ input:focus, .input-textarea:focus {
   font-family: gravelo;
   padding-top: 5px;
   border: 0px;
+  letter-spacing: 0.5px;
   transition: all 0.6s ease-in-out;
 }
 
 .input-submit:hover {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: white;
-  background-color: black;
+  background-color: rgb(33, 71, 182);
   transition: all 0.6s ease-in-out;
 }

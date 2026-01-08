@@ -1,43 +1,49 @@
-@font-face {
-  font-family: amoreChristmas;
-  src: url(/assets/font/Amore\ Christmas.otf);
+body {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 5% auto;
+  grid-template-areas:
+    "header header header"
+    "main main main";
+  overflow: hidden;
+  max-width: 100vw;
 }
 
-video {
-  opacity: 0.3;
+.background-video {
+  opacity: 0.2;
   animation: none;
 }
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  animation-duration: 0;
 }
 
 .demo-video {
-  width: 85%;
-  height: auto;
-  background-color: black;
+  width: 90%;
+  height: 90%;
+  background-color: red;
   opacity: 1;
   z-index: 10;
-  border-radius: 25px;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.098);
+  object-fit: cover;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.18));
 }
 
-.text {
-font-family: amoreChristmas;
-text-transform: lowercase;
-  font-size: 3em;
+.video-topic {
+  font-family: dirtyline;
+  text-transform: lowercase;
+  font-size: 2em;
   z-index: 20;
-    letter-spacing: 1px;
   opacity: 0.7;
-  transition: all 0.7s ease-in-out;
+  position: relative;
+  bottom: -6%;
+  right: 27%;
+  transition: all 0.3s ease-in-out;
 }
 
-.demo-video:hover + .text {
-  letter-spacing: 1.2px;
-  opacity: 0;
-  transition: all 0.7s ease-in-out;
+.demo-video:hover + .video-topic {
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
 }

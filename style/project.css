@@ -1,48 +1,86 @@
-@font-face {
-  font-family: dirtyline;
-  src: url(/assets/font/Dirtyline.otf);
+body {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% auto;
+  grid-template-areas:
+    "header header header"
+    "main main main";
+  overflow: hidden;
+  max-width: 100vw;
 }
 
-.project-heading {
-  z-index: 100;
-  position: relative;
-  left: 47.5%;
-  top: 40%;
-  transform: scale(10);
-  width: 5%;
-  text-align: center;
-  font-family: dirtyline;
-  animation: heading-ani 5s ease-in-out forwards;
+.background-video {
+  opacity: 0.2;
+  animation: none;
 }
 
-@keyframes heading-ani {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
+/* Main */
 main {
   display: flex;
-  flex-direction: column;
-  justify-content: end;
 }
 
-.main-project {
-  height: 100%;
+/* three major project highlist */
+.project-list {
+  height: 95%;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  gap: 30px;
   perspective: 500px;
+  overflow: hidden;
+}
+
+.project01,
+.project02,
+.project03 {
+  width: 30%;
+  height: 90%;
+  text-align: center;
+  scale: 0.9;
+  background-color: black;
+  border-radius: 25px;
+  transition: all 1s ease-in-out;
+  animation: bottom_to_origin 2s ease-in-out;
+}
+
+.project02:hover {
+  scale: 1;
+  filter: drop-shadow(0 0 10px red);
+  transition: all 1s ease-in-out;
+}
+
+.project01 {
+  transform: rotateY(7deg);
+  transition: all 1s ease-in-out;
+}
+.project01:hover {
+  scale: 1;
+  filter: drop-shadow(0 0 10px blue);
+  transform: rotateY(3deg);
+  transition: all 1s ease-in-out;
+}
+
+.project03 {
+  transform: rotateY(-7deg);
+  transition: all 1s ease-in-out;
+}
+.project03:hover {
+  scale: 1;
+  filter: drop-shadow(0 0 10px green);
+  transform: rotateY(-3deg);
+  transition: all 1s ease-in-out;
 }
 
 .project01 img,
 .project02 img,
 .project03 img {
-  opacity: 0.4;
-  filter: blur(20px);
-  transition: all 1.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  border-radius: 25px;
+  object-fit: cover;
+  filter: blur(12px);
+  transition: all 1s ease-in-out;
 }
 
 .project01:hover img,
@@ -52,50 +90,34 @@ main {
   filter: blur(0);
 }
 
-.project01,
-.project02,
-.project03 {
-  width: 30%;
-  height: 85%;
-  scale: 0.9;
-  text-align: center;
-  transition: all 1.5s ease-in-out;
-  position: relative;
-}
-
 .project01 p,
 .project02 p,
 .project03 p {
-  position: absolute;
-  bottom: -0%;
+  position: relative;
+  bottom: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(10);
-  opacity: 0.5;
+  transform: translate(-50%, -50%) scale(5);
+  font-size: 5em;
+  opacity: 0.7;
   margin: 0;
-  pointer-events: none;
   font-family: dirtyline;
   z-index: 2;
+  animation: bottom_to_origin 3s ease-in-out;
 }
 
-.project01 {
-  transform: rotateY(6deg);
+@keyframes bottom_to_origin {
+  from {
+    opacity: 0;
+    bottom: 0;
+  }
+  to {
+    bottom: 50%;
+  }
 }
 
-.project03 {
-  transform: rotateY(-6deg);
-}
-
-.project01:hover,
-.project02:hover,
-.project03:hover {
-  scale: 1;
-  opacity: 1;
-  filter: blur(0px);
-  transition: all 1.5s ease-in-out;
-}
-
-.main-project section img {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
+.project01 img:hover + p,
+.project02 img:hover + p,
+.project03 img:hover + p {
+  opacity: 0;
+  transition: all 1s ease-in-out;
 }

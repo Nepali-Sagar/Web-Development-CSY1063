@@ -8,9 +8,19 @@
     <title>Home</title>
   </head>
   <body>
-    <video autoplay muted loop playsinline preload="auto">
-      <source src="/assets/video/background3.mp4" type="video/mp4" />
+    <!-- background video -->
+    <video
+      class="background-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+    >
+      <source src="/assets/video/background6.mp4" type="video/mp4" />
     </video>
+
+    <!-- START: header and nav -->
     <header>
       <nav>
         <div class="left-side">
@@ -25,42 +35,41 @@
         </div>
       </nav>
     </header>
+    <!-- END: header and nav -->
 
+    <!-- START: main -->
     <main>
-      <section class="main-text">
-        <p>sagar</p>
-        <p>nepali</p>
-      </section>
+      <section class="container">
+        <section class="name-section">
+          <p>sagar</p>
+          <p>nepali</p>
+        </section>
 
-      <section class="text">
-        <p>discipline</p>
-        <p>consistency</p>
-      </section>
-      <span class="divider"></span>
-      <section class="quoto">
-        <p>“innovation distinguishes between a leader and a follower.”</p>
-        <div class="box">
-          <p>steven paul jobs</p>
-        </div>
+        <section class="text-case">
+          <p>discipline</p>
+          <p>consistency</p>
+        </section>
+
+        <section class="quoto">
+          <p>“innovation distinguishes between a leader and a follower.”</p>
+          <div class="quoto-hover-box">
+            <p>steven paul jobs</p>
+          </div>
+        </section>
       </section>
     </main>
+    <!-- END: main -->
 
+    <!-- START: footer -->
     <footer>
       <p class="about-me">me</p>
       <p class="about-me-text">
         I’m a first-year BSc (Hons) Computer Science student focused on learning
-        <span class="cursive-letter">real skills</span>
-        , especially web development and
-        <span class="cursive-letter">problem-solving</span>
-        . I value
-        <span class="bg-text">discipline</span>,
-        <span class="bg-text">consistency</span>, and progress over excuses, and
-        I spend my time
-        <span class="cursive-letter"
-          >building, improving, and pushing myself</span
-        >
-        to get better every day.
+        real skills, especially web development and problem-solving. I value,
+        and progress over excuses, and I spend my time building, improving, and
+        pushing myself to get better every day.
       </p>
     </footer>
+    <!-- END: footer -->
   </body>
 </html>
