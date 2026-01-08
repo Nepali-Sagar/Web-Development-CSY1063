@@ -20,12 +20,11 @@ main {
 
 /* three major project highlist */
 .project-list {
-  height: 95%;
+  height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  gap: 30px;
   perspective: 500px;
   overflow: hidden;
 }
@@ -115,11 +114,6 @@ main {
   }
 }
 
-.project-list{
-    gap: 0px;
-    justify-content: start;
-}
-
 .project01 img:hover + p,
 .project02 img:hover + p,
 .project03 img:hover + p {
@@ -133,7 +127,8 @@ main {
   }
   body {
     overflow: scroll;
-    height: 250%;
+    scroll-behavior: smooth;
+    height: 220%;
   }
 
   nav {
@@ -157,12 +152,27 @@ main {
   .project03:hover {
     transform: rotateY(0deg);
   }
+  .project01 {
+    filter: drop-shadow(0 0 15px rgb(30, 30, 244));
+  }
+  .project02 {
+    filter: drop-shadow(0 0 15px rgb(251, 42, 42));
+  }
+  .project03 {
+    filter: drop-shadow(0 0 15px rgb(45, 249, 45));
+  }
+
+  .project01 img,
+  .project02 img,
+  .project03 img {
+    filter: blur(0);
+    opacity: 0.9;
+  }
 
   .project01 p,
   .project02 p,
   .project03 p {
-    font-size: 3em;
-    font-size: 1em;
+    font-size: 0.5em;
     opacity: 1;
     animation-duration: 1s;
   }
