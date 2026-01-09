@@ -62,20 +62,25 @@ main {
 }
 
 .text-case p {
-  width: 40%;
   height: 100%;
-  font-size: 2em;
+  font-size: 2.5em;
   text-transform: uppercase;
   text-align: center;
   align-content: center;
   opacity: 1;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text-case p:first-child {
-  background-color: firebrick;
+  width: 20%;
 }
 .text-case p:nth-child(2) {
-  background-color: royalblue;
+  width: 60%;
+}
+.text-case p:last-child {
+  width: 20%;
 }
 .text-case p:hover {
   text-transform: lowercase;
@@ -94,6 +99,9 @@ main {
   font-size: 1.3em;
   font-family: dirtyline;
   text-align: center;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .quoto p:hover {
@@ -119,7 +127,6 @@ main {
 
 .quoto p:hover + .quoto-hover-box {
   opacity: 0.8;
-  font-style: italic;
   transform: translateY(0);
 }
 
