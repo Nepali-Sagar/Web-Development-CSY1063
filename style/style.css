@@ -121,10 +121,16 @@ main {
 
   .right-side input {
     visibility: visible;
+    position: relative;
+    top: 60px;
+    z-index: 10;
   }
 
   .right-side img {
     visibility: visible;
+    position: relative;
+    top: 25px;
+    margin-bottom: 20px;
   }
 
   .right-side a {
