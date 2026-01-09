@@ -160,6 +160,16 @@ main {
   height: auto;
 }
 
+@media (max-width: 1249px) {
+  .content,
+  .content-title {
+    width: 70%;
+  }
+  .side-bar {
+    visibility: hidden;
+  }
+}
+
 @media (max-width: 768px) {
   article,
   .side-space-left {

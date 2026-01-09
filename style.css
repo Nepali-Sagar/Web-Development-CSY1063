@@ -140,13 +140,15 @@ main {
 
   .right-side a {
     visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    font-size: 0.8em;
+    padding: 2px;
+    transition: all 0.1s ease-in-out;
   }
 
   .right-side input:checked ~ a {
     visibility: visible;
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
+    background-color: white;
+    color: black;
+    transition: all 0.1s ease-in-out;
   }
 }

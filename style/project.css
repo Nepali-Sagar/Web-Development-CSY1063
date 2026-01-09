@@ -100,12 +100,30 @@ main {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1249px) {
   html {
     scroll-behavior: smooth;
   }
   body {
     overflow: scroll;
+    height: 100%;
+  }
+  .project-list {
+    flex-wrap: wrap;
+  }
+
+  .project-list section {
+    width: 50%;
+    height: 40%;
+    transform: scale(0.9);
+  }
+  .project-list section p {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
     height: 220%;
   }
 

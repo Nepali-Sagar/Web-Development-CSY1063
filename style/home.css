@@ -162,6 +162,16 @@ footer {
   opacity: 0.5;
 }
 
+@media (max-width: 1249px) {
+  .name-section p {
+    font-size: 7em;
+  }
+  .text-case p {
+    width: 50%;
+    font-size: 1.5em;
+  }
+}
+
 @media (max-width: 768px) {
   html {
     overflow: hidden;
@@ -178,12 +188,9 @@ footer {
     font-size: 4em;
   }
 
-  .text-case {
-    flex-direction: row;
-  }
-
   .text-case p {
     font-size: 1.3em;
+    width: 40%;
     text-transform: lowercase;
   }
 
