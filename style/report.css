@@ -163,7 +163,7 @@ main {
 @media (max-width: 1249px) {
   .content,
   .content-title {
-    width: 70%;
+       width: 80%;
   }
   .side-bar {
     visibility: hidden;
