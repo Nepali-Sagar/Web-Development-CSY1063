@@ -48,7 +48,6 @@ main {
   font-size: 10em;
   text-align: center;
   transform: scale(1.5);
-
 }
 
 /* main container text-case */
@@ -164,10 +163,10 @@ footer {
 }
 
 @media (max-width: 768px) {
-  html{
+  html {
     overflow: hidden;
   }
-  .container{
+  .container {
     width: 100%;
     height: 50%;
   }
@@ -206,8 +205,11 @@ footer {
 
   .quoto-hover-box {
     opacity: 1;
-    top: -140%;
+    transform: translateY(-10px);
     transition: none;
+  }
+  .quoto p:hover + .quoto-hover-box {
+    transform: translateY(-15px);
   }
   .quoto-hover-box p {
     opacity: 1;
