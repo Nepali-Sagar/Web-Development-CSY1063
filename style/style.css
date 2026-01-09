@@ -1,19 +1,19 @@
 @font-face {
   font-family: dirtyline;
-  src: url(/assets/font/Dirtyline.otf);
+  src: url(../assets/font/Dirtyline.otf);
 }
 @font-face {
   font-family: gravelo;
-  src: url(/assets/font/Gravelo.otf);
+  src: url(../assets/font/Gravelo.otf);
 }
 @font-face {
   font-family: roboto;
-  src: url(/assets/font/Roboto.ttf);
+  src: url(../assets/font/Roboto.ttf);
 }
 
 @font-face {
   font-family: amoreChristmas;
-  src: url(/assets/font/Amore\ Christmas.otf);
+  src: url(../assets/font/Amore\ Christmas.otf);
 }
 
 :root {
