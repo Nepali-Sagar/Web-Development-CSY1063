@@ -77,7 +77,7 @@ main {
   width: 10%;
 }
 .text-case p:nth-child(2) {
-  width: 60%;
+  width: 50%;
 }
 .text-case p:last-child {
   width: 10%;
@@ -101,34 +101,28 @@ main {
   font-family: dirtyline;
   text-align: center;
   letter-spacing: 1px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), white);
+  font-style: italic;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .quoto p:hover {
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 /* main container quoto-hover-box */
 .quoto-hover-box {
   justify-self: center;
   opacity: 0;
-  color: white;
   transform: translateY(50px);
   position: relative;
   bottom: 50%;
   transition: opacity 0.6s ease, transform 0.4s ease;
 }
 
-.quoto-hover-box p {
-  text-align: center;
-  padding: 10px;
-  text-transform: lowercase;
-}
-
 .quoto p:hover + .quoto-hover-box {
-  opacity: 0.8;
+  opacity: 1;
   transform: translateY(0);
 }
 
@@ -179,9 +173,9 @@ footer {
     width: 50%;
     font-size: 1.2em;
   }
-   .quoto p{
+  .quoto p {
     font-size: 0.8em;
-   }
+  }
 }
 
 @media (max-width: 768px) {
@@ -201,14 +195,14 @@ footer {
   }
 
   .text-case p {
-    font-size: 1em;
+    font-size: 0.8em;
     text-transform: lowercase;
   }
   .text-case p:first-child {
     width: 10%;
   }
   .text-case p:nth-child(2) {
-    width: 50%;
+    width: 40%;
   }
   .text-case p:last-child {
     width: 10%;
@@ -225,9 +219,9 @@ footer {
 
   .quoto p {
     width: 100%;
-    font-size: 0.6em;
+    font-size: 0.5em;
     opacity: 0.7;
-    font-style: italic;
+    text-align: center;
   }
 
   .quoto-hover-box {
@@ -236,11 +230,8 @@ footer {
     transition: none;
   }
   .quoto p:hover + .quoto-hover-box {
-    transform: translateY(-15px);
-  }
-  .quoto-hover-box p {
     opacity: 1;
-    font-size: 0.5em;
+    transform: translateY(-15px);
   }
 
   .about-me {

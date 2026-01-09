@@ -16,6 +16,20 @@
   src: url(/assets/font/Amore\ Christmas.otf);
 }
 
+:root {
+  --color-bg: #000000;
+  --color-text: #ffffff;
+  --color-accent: #f5c06b;
+  --color-muted: rgba(255, 255, 255, 0.5);
+  --font-display: dirtyline;
+  --font-heading: gravelo;
+  --font-body: roboto;
+  --font-fancy: amoreChristmas;
+  --nav-height: 10%;
+  --gap-sm: 10px;
+  --transition-fast: 0.2s ease-in-out;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,8 +43,8 @@ html {
 body {
   width: 100%;
   height: 100%;
-  color: white;
-  background-color: black;
+  color: var(--color-text);
+  background-color: var(--color-bg);
   display: grid;
 }
 
@@ -76,7 +90,7 @@ nav {
 
 nav a {
   font-size: 0.8em;
-  color: white;
+  color: var(--color-text);
   text-decoration: none;
   font-family: gravelo;
   letter-spacing: 1px;
@@ -147,8 +161,8 @@ main {
 
   .right-side input:checked ~ a {
     visibility: visible;
-    background-color: white;
-    color: black;
+    background-color: var(--color-text);
+    color: var(--color-bg);
     transition: all 0.1s ease-in-out;
   }
 }

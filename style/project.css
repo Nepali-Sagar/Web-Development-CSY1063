@@ -36,7 +36,7 @@ main {
   height: 80%;
   transform: scale(0.8);
   text-align: center;
-  background-color: black;
+  background-color: var(--color-bg);
   border-radius: 50px;
   transition: all 0.5s ease-in-out;
   animation: bottom_to_origin 2s ease-in-out;
@@ -81,14 +81,14 @@ main {
   position: relative;
   bottom: 50%;
   left: 50%;
-  background-image: linear-gradient(to top, rgb(163, 163, 163), white);
+  background-image: linear-gradient(to top, var(--color-muted), var(--color-text));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: translate(-50%, -50%) scale(3);
   font-size: 1em;
   opacity: 0.7;
   margin: 0;
-  font-family: dirtyline;
+  font-family: var(--font-display);
   z-index: 2;
   animation: bottom_to_origin 1s ease-in-out;
 }

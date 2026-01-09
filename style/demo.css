@@ -25,7 +25,7 @@ main {
 }
 
 .video-section {
-  background-color: black;
+  background-color: var(--color-bg);
   height: 90%;
   margin-bottom: 10px;
 }
@@ -54,7 +54,7 @@ main {
 }
 
 .video-title {
-  font-family: dirtyline;
+  font-family: var(--font-display);
   text-transform: lowercase;
   text-align: center;
   font-size: 2em;
@@ -69,8 +69,8 @@ main {
 .video-link a {
   display: inline;
   font-size: 1.2em;
-  color: white;
-  font-family: dirtyline;
+  color: var(--color-text);
+  font-family: var(--font-display);
   padding: 8px;
   border-radius: 9px;
   text-decoration: none;

@@ -1,7 +1,7 @@
 html {
   scroll-padding-top: 250px;
   scroll-behavior: smooth;
-  font-family: roboto;
+  font-family: var(--font-body);
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 }
 
 nav {
-  background-color: black;
+  background-color: var(--color-bg);
   opacity: 1;
 }
 
@@ -113,7 +113,7 @@ main {
 }
 
 .side-bar ul li a {
-  color: white;
+  color: var(--color-text);
   text-decoration: none;
   opacity: 0.5;
   transition: all 1s ease-in-out;
