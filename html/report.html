@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/style.css"/>
+    <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/report.css" />
     <title>Project</title>
   </head>
@@ -37,118 +37,203 @@
 
       <section class="content">
         <section class="content1">
-          <h2 id="content1" class="content-heading">
-            My Web Development Journey
-          </h2>
+          <h2 id="content1" class="content-heading">Introduction</h2>
           <p class="content-text">
-            Learning web development has been a challenging yet rewarding
-            experience. Beginning with no prior coding knowledge, I started by
-            understanding the basic structure of HTML—tags, elements, and
-            document flow. CSS initially felt overwhelming, especially concepts
-            like the box model, positioning, and responsive design. One of my
-            early struggles was aligning items properly across different screen
-            sizes. However, through trial and error—and frequent use of browser
-            developer tools—I gradually improved. I learned how to debug layout
-            issues, validate my code, and ensure semantic markup. Using Git and
-            GitHub was another learning curve, but committing regularly helped
-            me track progress and revert mistakes. The biggest “up” was seeing
-            my portfolio come to life; the biggest “down” was wrestling with
-            mobile menu functionality, which I eventually solved using CSS Grid
-            and media queries.
+            The purpose of this website is to present a personal portfolio
+            developed using HTML and CSS as part of the CSY1063 Web Development
+            module. The site demonstrates core front-end skills, including page
+            structure, layout design, responsiveness, and basic animation. This
+            report explains the learning process, design decisions, technical
+            implementation, challenges faced, and how version control and
+            validation were applied during development.
           </p>
         </section>
         <section class="content2">
-          <h2 id="content2" class="content-heading">Reflective Discussion</h2>
+          <h2 id="content2" class="content-heading">
+            Learning Experience and Development Process
+          </h2>
           <p class="content-text">
-            This module has fundamentally changed how I approach problem-solving
-            in a digital space. I now appreciate the importance of planning
-            before coding, and how small details—like color contrast or font
-            sizing—can significantly impact user experience. While I initially
-            found CSS frustrating, I now enjoy the creative control it offers.
-            Time management was a challenge, especially balancing this project
-            with other coursework, but breaking the work into smaller tasks made
-            it manageable. I’ve grown not only technically but also in my
-            ability to learn independently, using online resources and
-            documentation to fill knowledge gaps. This experience has sparked my
-            interest in front-end development, and I’m motivated to learn more
-            about JavaScript and accessibility in the future.
+            During this project, I developed a stronger understanding of
+            semantic HTML structure, CSS layout techniques, and responsive
+            design. My CSS knowledge improved significantly, particularly in
+            transitions, animations, and layout control using Flexbox and Grid.
+            I also gained practical experience using Git and GitHub for version
+            control, including committing changes regularly, resolving issues,
+            and understanding GitHub Pages deployment. Over time, my workflow
+            became more structured and efficient.
           </p>
         </section>
         <section class="content3">
           <h2 id="content3" class="content-heading">
-            Technical & Design Overview
+            Design Decisions and User Interface (UI)
           </h2>
           <p class="content-text">
-            I built the site using a mobile-first approach, starting with the
-            HTML structure for each of the five required pages. I ensured
-            semantic tags were used throughout—like &lt;header&gt;, &lt;nav&gt;,
-            &lt;main&gt;, and &lt;footer&gt;—to improve accessibility and SEO.
-            CSS was used to create a consistent layout across all pages, with a
-            focus on responsiveness. I implemented a flexbox-based navigation
-            bar that transforms into a hamburger menu on mobile devices. The
-            project page uses CSS Grid to display items in a structured yet
-            visually appealing way. Each page is linked through a unified menu,
-            and the site maintains a cohesive visual identity across devices.
+            The site uses a dark background (#000000) with white text and a warm
+            accent color (#f5c06b) to create strong contrast and readability.
+            Custom fonts such as Dirtyline, Gravelo, and Roboto were selected to
+            establish hierarchy between headings, body text, and decorative
+            elements. Font sizes vary from small text to large hero headings to
+            guide user attention. The layout prioritises clarity and visual
+            focus, with hover effects used to indicate interactivity.
           </p>
+          <div class="pageUI">
+            <div class="pageImg">
+              <img src="/assets/img/Page UI/Home.png" alt="" />
+              <img src="/assets/img/Page UI/mobile/Mobile Home.png" alt="" />
+              <img src="/assets/img/Page UI/homePage.png" alt="" />
+            </div>
+            <p>Home Page</p>
+          </div>
+
+          <div class="pageUI">
+            <div class="pageImg">
+              <img src="/assets/img/Page UI/Project.png" alt="" />
+              <img src="/assets/img/Page UI/mobile/Mobile Project.png" alt="" />
+              <img src="/assets/img/Page UI/projectPage.png" alt="" />
+            </div>
+            <p>Project Page</p>
+          </div>
+
+          <div class="pageUI">
+            <div class="pageImg">
+              <img src="/assets/img/Page UI/VIdeo Demo.png" alt="" />
+              <img
+                src="/assets/img/Page UI/mobile/Mobile Video Demo.png"
+                alt=""
+              />
+              <img src="/assets/img/Page UI/Home.png" alt="" />
+            </div>
+            <p>Video Demo Page</p>
+          </div>
+
+          <div class="pageUI">
+            <div class="pageImg">
+              <img src="/assets/img/Page UI/Site Report.png" alt="" />
+              <img
+                src="/assets/img/Page UI/mobile/Mobile Site report.png"
+                alt=""
+              />
+              <img src="/assets/img/Page UI/reportPage.png" alt="" />
+            </div>
+            <p>Site Report Page</p>
+          </div>
+
+          <div class="pageUI">
+            <div class="pageImg">
+              <img src="/assets/img/Page UI/Contact.png" alt="" />
+              <img src="/assets/img/Page UI/mobile/Mobile Contact.png" alt="" />
+              <img src="/assets/img/Page UI/contactPage.png" alt="" />
+            </div>
+            <p>Contact Page</p>
+          </div>
         </section>
         <section class="content4">
-          <h2 id="content4" class="content-heading">Design Decisions</h2>
+          <h2 id="content4" class="content-heading">
+            Technical Implementation
+          </h2>
           <p class="content-text">
-            I wanted a clean, professional, and accessible design. After
-            researching modern portfolio examples, I chose a color palette of
-            deep blue (#1e3a8a) for headings and accents, with a light gray
-            (#f9fafb) for the background to ensure readability. The fonts were
-            selected from Google Fonts: ‘Open Sans’ for body text due to its
-            clarity on screens, and ‘Montserrat’ for headings to add a modern
-            touch. I was inspired by minimalist portfolios on sites like
-            Awwwards and Behance, which emphasize whitespace, clear typography,
-            and intuitive navigation. Before coding, I created a wireframe in
-            Figma to plan the layout and user flow. This helped me visualize
-            spacing, component placement, and overall usability. Below is the
-            initial Figma mockup:
+            All pages share a consistent navigation bar. Page-level layout uses
+            CSS Grid for structure, while Flexbox is applied inside sections for
+            alignment and spacing. Responsive behaviour is handled using media
+            queries at 1249px and 768px. A mobile hamburger menu is implemented
+            using adjacent sibling combinators and pseudo-classes. CSS
+            animations such as hover scaling, opacity transitions, and
+            keyframe-based drop-shadow effects enhance user feedback.
           </p>
         </section>
         <section class="content5">
-          <h2 id="content5" class="content-heading">Code Validation</h2>
+          <h2 id="content5" class="content-heading">
+            Debugging and Challenges
+          </h2>
           <p class="content-text">
-            All HTML and CSS files have been validated using the W3C Markup
-            Validation Service. No errors were found, ensuring compliance with
-            current web standards. Below are the validation reports: [INSERT
-            HTML VALIDATION SCREENSHOT HERE] [INSERT CSS VALIDATION SCREENSHOT
-            HERE]
+            A major challenge was implementing a background video, which failed
+            on GitHub Pages due to performance and file-size issues. This was
+            resolved by removing the background video and replacing it with a
+            solid background. Responsiveness was another ongoing challenge,
+            particularly at mid-screen sizes. Git LFS was explored for video
+            handling but later removed from the final production workflow.
           </p>
         </section>
         <section class="content6">
-          <h2 id="content6" class="content-heading">Video Demonstration</h2>
+          <h2 id="content6" class="content-heading">
+            Validation and Standards Compliance
+          </h2>
           <p class="content-text">
-            A walkthrough of my portfolio website, including an overview of
-            design choices and code structure, can be viewed here: [INSERT
-            YOUTUBE OR MEDIA SPACE VIDEO LINK HERE]
+            HTML and CSS validation were performed using online validators.
+            Screenshot placeholders are included in the report. Validation
+            ensures standards compliance, improves accessibility, and reduces
+            cross-browser issues.
           </p>
         </section>
         <section class="content7">
-          <h2 id="content7" class="content-heading">Screenshots</h2>
+          <h2 id="content7" class="content-heading">
+            GitHub Usage and Version Control
+          </h2>
           <p class="content-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt e
-            numquam dolore eos, cum delectus ad latboriosam perspiciatis
-            expedita, est minima itaque esse. Quibusdam consequuntur ipsam,
-            illum fuga cupiditate quod? Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Error exercitationem recusandae distinctio facere
-            similique laboriosam dolores quia beatae cum perspiciatis nulla,
-            debitis, autem, earum laborum quo dignissimos. Totam, sunt incidunt!
+            GitHub was used throughout development with frequent commits
+            documenting incremental progress, bug fixes, and refinements.
+            Commits span multiple dates, showing continuous development.
+            Branching and merging were used to manage changes safely before
+            final deployment to GitHub Pages.
+          </p>
+
+          <div class="pageUI">
+            <div class="pageImg">
+              <img src="/assets/img/commit.png" alt="" />
+            </div>
+            <p>Commit</p>
+          </div>
+        </section>
+
+        <section class="content8">
+          <h2 id="content8" class="content-heading">Video Demonstration</h2>
+          <p class="content-text">
+            A video demonstration will be uploaded to YouTube and embedded using
+            an iframe. The video will showcase navigation, responsiveness, hover
+            effects, and animations across the site.
+          </p>
+
+          <iframe
+            class="reportDemo-video"
+            src="https://www.youtube.com/embed/Ow_iZWjT7Vw"
+            title="background7"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <a class="video-link" href="https://www.youtube.com/embed/Ow_iZWjT7Vw">Youtube Link</a>
+        </section>
+
+        <section class="content9">
+          <h2 id="content9" class="content-heading">
+            Reflection and Future Improvements
+          </h2>
+          <p class="content-text">
+            With more time, responsiveness would be further refined and
+            JavaScript would be added to improve interactivity, especially in
+            the project section. Overall, the project strengthened my
+            understanding of front-end fundamentals and practical development
+            workflows.
           </p>
         </section>
       </section>
       <article class="side-bar">
         <h2 class="sidebar-title">On this page</h2>
         <ul>
-          <li><a href="#content1">My Web Development Journey</a></li>
-          <li><a href="#content2">Reflective Discussion</a></li>
-          <li><a href="#content3">Technical & Design Overview</a></li>
-          <li><a href="#content4">Design Decisions</a></li>
-          <li><a href="#content5">Code Validation</a></li>
-          <li><a href="#content6">Video Demonstration</a></li>
-          <li><a href="#content7">Screenshots</a></li>
+          <li><a href="#content1">Introduction</a></li>
+          <li>
+            <a href="#content2">Learning Experience and Development Process</a>
+          </li>
+          <li>
+            <a href="#content3">Design Decisions and User Interface (UI)</a>
+          </li>
+          <li><a href="#content4">Technical Implementation</a></li>
+          <li><a href="#content5">Debugging and Challenges</a></li>
+          <li><a href="#content6">Validation and Standards Compliance</a></li>
+          <li><a href="#content7">GitHub Usage and Version Control</a></li>
+          <li><a href="#content8">Video Demonstration</a></li>
+          <li><a href="#content9">Reflection and Future Improvements</a></li>
         </ul>
       </article>
     </main>
