@@ -18,7 +18,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  color: var(--color-bg);
+  color: var(--color-text);
 }
 
 form {
@@ -37,7 +37,7 @@ fieldset {
   align-items: center;
   gap: 8px;
   border: none;
-  border-top: 5px solid var(--color-bg);
+  border-top: 5px solid var(--color-text);
 }
 
 legend {
@@ -49,7 +49,7 @@ legend {
 }
 
 ::placeholder {
-  color: var(--color-bg);
+  color: var(--color-text);
   opacity: 0.5;
 }
 
@@ -63,10 +63,14 @@ legend {
   padding-top: 7px;
   padding-left: 20px;
   border: 0px solid var(--color-bg);
-  color: var(--color-bg);
+  color: var(--color-text);
   letter-spacing: 1px;
   background-color: transparent;
   border-bottom: 1px solid black;
+}
+
+.input-text{
+  border-bottom: 2px solid var(--color-text);
 }
 
 input:focus,
@@ -81,7 +85,7 @@ input:focus,
 
 .input-submit {
     font-size: 2em;
-  color: var(--color-bg);
+  color: var(--color-text);
   font-family: var(--font-heading);
   padding-top: 5px;
   border: 0px;
