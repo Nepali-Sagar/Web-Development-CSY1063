@@ -1,50 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 5% auto;
   grid-template-areas:
     "header header header"
     "main main main";
-  overflow: hidden;
-  max-width: 100vw;
+  overflow: scroll;
+  height: 200%;
 }
 
-.background-video {
-  opacity: 0.2;
-  animation: none;
+nav {
+  background-color: black;
 }
 
-/* Main */
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* three major project highlist */
 .project-list {
-  height: 100%;
   width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content;
+  gap: 100px;
+}
+
+.project-list section:first-child {
+  margin-top: 50px;
+}
+.project-list section {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: auto;
+}
+.project-list section a {
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
-
-.project-list section {
-  width: 25%;
-  height: 80%;
-  transform: scale(0.8);
-  text-align: center;
-  background-color: var(--color-bg);
-  border-radius: 50px;
-  transition: all 0.5s ease-in-out;
-  animation: bottom_to_origin 2s ease-in-out;
+.project-list section h3 {
+  font-size: 3em;
+  font-family: dirtyline;
+  background-image: linear-gradient(
+    to top,
+    var(--color-muted),
+    var(--color-text)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.project-list section:hover {
-  transform: scale(1);
-  transition: all 0.5s ease-in-out;
+.project-list section img {
+  width: 100%;
+  filter: blur(5px);
+  opacity: 0.8;
 }
-
+.project-list section img:hover {
+  filter: blur(0);
+  opacity: 1;
+}
+.project-list section :hover {
+  transition: all 0.2s ease-in-out;
+}
 .project01:hover {
   filter: drop-shadow(0 0 20px blue);
 }
@@ -61,110 +81,40 @@ main {
   filter: drop-shadow(0 0 20px rgb(45, 239, 249));
 }
 
-.project-list section img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  border-radius: 50px;
-  object-fit: cover;
-  filter: blur(12px);
-  transition: all 0.5s ease-in-out;
-  margin-top: -20px;
-}
-
-.project-list section:hover img {
-  opacity: 1;
-  filter: blur(0);
-}
-
-.project-list section h3 {
-  position: relative;
-  bottom: -50%;
-  left: 50%;
-  background-image: linear-gradient(to top, var(--color-muted), var(--color-text));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transform: translate(-50%, -50%) scale(3);
-  font-size: 1em;
-  opacity: 0.7;
-  font-family: var(--font-display);
-  z-index: 2;
-  animation: bottom_to_origin 1s ease-in-out;
-}
-
-@keyframes bottom_to_origin {
-  from {
-    opacity: 0;
-    bottom: 0;
-  }
-  to {
-    bottom: 50%;
-  }
-}
-
-@media (max-width: 1249px) {
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    overflow: scroll;
-    height: 100%;
-  }
-  .project-list {
-    flex-wrap: wrap;
-  }
-
-  .project-list section {
-    width: 50%;
-    height: 40%;
-    transform: scale(0.9);
-  }
-  .project-list section h3 {
-    font-size: 1em;
-  }
-}
-
 @media (max-width: 768px) {
-  body {
-    height: 220%;
-  }
-
-  nav {
-    background-color: black;
-  }
   .project-list {
-    flex-direction: column;
+    gap: 0px;
   }
-
-  .project-list section {
+  .project-list section a {
     width: 90%;
-    height: auto;
   }
 
-  .project-list section:hover {
-    transform: scale(0.8);
+  .project-list section img {
+    filter: blur(0px);
+    opacity: 1;
   }
+
   .project01 {
     filter: drop-shadow(0 0 15px rgb(30, 30, 244));
   }
   .project02 {
     filter: drop-shadow(0 0 15px rgb(251, 42, 42));
+    margin-top: -80px;
   }
   .project03 {
     filter: drop-shadow(0 0 15px rgb(45, 249, 45));
+    margin-top: -200px;
   }
   .project04 {
     filter: drop-shadow(0 0 15px rgb(45, 239, 249));
+    margin-top: -200px;
   }
 
   .project-list section img {
     filter: blur(0);
-    opacity: 1;
   }
 
-  .project-list section p {
-    font-size: 0.5em;
-    opacity: 1;
-    animation-duration: 1s;
+  .project-list section h3 {
+    font-size: 2em;
   }
 }
