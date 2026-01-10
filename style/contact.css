@@ -7,7 +7,7 @@ body {
 }
 
 nav{
-  background-color: royalblue;
+ background-color: #0f172a;
 }
 
 main {
@@ -17,7 +17,7 @@ main {
   align-items: center;
   gap: 50px;
   color: var(--color-text);
-  background-color: royalblue;
+  background-color: #0f172a;
 }
 
 form {
@@ -104,7 +104,7 @@ input:focus,
 .input-submit:hover {
   letter-spacing: 4px;
   color: var(--color-text);
-  background-color: rgb(35, 77, 204);
+  background-color: #485c8c;
   transition: all 0.6s ease-in-out;
 }
 
