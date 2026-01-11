@@ -199,13 +199,12 @@ footer {
 
   .text-case {
     height: 30%;
-    flex-direction: row;
     flex-wrap: wrap;
   }
 
   .text-case p {
     font-size: 3em;
-    height: 25%;
+    height: 40%;
     text-transform: lowercase;
   }
   .text-case p:first-child {
