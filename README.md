@@ -71,5 +71,16 @@ It demonstrates my projects, site report, video demo, and contact form, showcasi
 ## Live Demo
 [View the Website](https://nepali-sagar.github.io/Web-Development-CSY1063/)
 
+## Local Video Demonstration
+The demonstration video is included in this repository.
+
+[Watch the video demo](assets/video/demoVideo.mp4)
+
+## Live Video Demonstration
+The demonstration video is in Youtube.
+
+[YouTube](https://youtu.be/4lZS8enPQ1c)
+
+
 ## License
 MIT License - see [LICENSE](LICENSE) for details.
