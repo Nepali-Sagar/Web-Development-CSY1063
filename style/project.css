@@ -1,15 +1,13 @@
-html {
+html,
+body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 5% auto;
-  grid-template-areas:
-    "header header header"
-    "main main main";
-  overflow: scroll;
-  height: 200%;
+  display: grid;
+  gap: 100px;
 }
 
 nav {
@@ -18,11 +16,10 @@ nav {
 
 .project-list {
   width: 100%;
-  height: 100%;
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: min-content;
+  grid-template-columns: 1fr;
   gap: 100px;
+  padding: 50px 0;
 }
 
 .project-list section:first-child {
@@ -34,7 +31,6 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  height: auto;
 }
 .project-list section a {
   width: 70%;
@@ -54,9 +50,12 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 .project-list section img {
-  width: 100%;
+  width: 80%;
+  max-width: 800px;
+  height: auto;
   filter: blur(5px);
   opacity: 0.8;
+  transition: all 0.3s ease;
 }
 .project-list section img:hover {
   filter: blur(0);
@@ -83,13 +82,16 @@ nav {
 
 @media (max-width: 768px) {
   .project-list {
-    gap: 0px;
+    gap: 50px;
+    padding: 30px 10px;
   }
   .project-list section a {
     width: 90%;
   }
 
   .project-list section img {
+    width: 100%;
+    max-width: 100%;
     filter: blur(0px);
     opacity: 1;
   }
@@ -99,15 +101,12 @@ nav {
   }
   .project02 {
     filter: drop-shadow(0 0 15px rgb(251, 42, 42));
-    margin-top: -80px;
   }
   .project03 {
     filter: drop-shadow(0 0 15px rgb(45, 249, 45));
-    margin-top: -200px;
   }
   .project04 {
     filter: drop-shadow(0 0 15px rgb(45, 239, 249));
-    margin-top: -200px;
   }
 
   .project-list section img {

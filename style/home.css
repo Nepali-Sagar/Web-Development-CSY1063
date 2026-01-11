@@ -8,28 +8,25 @@ body {
   overflow: hidden;
 }
 
-.background-video {
-  opacity: 0.8;
-  animation: none;
-}
-
 /* Main */
 main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 80vh; 
+  flex-direction: column;
 }
 
 /* main container */
 .container {
-  width: 50%;
-  height: 70%;
+  width: 60%; 
+  max-width: 1000px;
+  height: auto; 
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: scale(1.2);
 }
 
 /* main container name-section, sagar nepali */
@@ -38,16 +35,17 @@ main {
   height: 85%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  margin: 0;
 }
 
 .name-section p {
-  width: 100%;
-  height: auto;
+  font-size: clamp(6em, 15vw, 15em);
   font-family: gravelo;
-  font-size: 10em;
-  text-align: center;
-  transform: scale(1.5);
+  margin: 0;
+  line-height: 1;
 }
 
 /* main container text-case */
@@ -126,6 +124,12 @@ main {
   transform: translateY(0);
 }
 
+.name-section,
+.text-case,
+.quoto {
+  height: auto;
+}
+
 /* footer */
 footer {
   grid-area: footer;
@@ -167,7 +171,7 @@ footer {
 
 @media (max-width: 1249px) {
   .name-section p {
-    font-size: 7em;
+    font-size: clamp(3em, 13vw, 13em);
   }
   .text-case p {
     width: 50%;
@@ -194,7 +198,7 @@ footer {
     height: 45%;
   }
   .name-section p {
-    font-size: 4.1em;
+    font-size: clamp(3em, 25vw, 25em);
   }
 
   .text-case {

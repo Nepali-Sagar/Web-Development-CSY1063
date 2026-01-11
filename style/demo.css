@@ -1,17 +1,3 @@
-body {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 5% auto;
-  grid-template-areas:
-    "header header header"
-    "main main main";
-  overflow: hidden;
-}
-
-.background-video {
-  opacity: 0.2;
-  animation: none;
-}
-
 main {
   display: flex;
   flex-direction: column;

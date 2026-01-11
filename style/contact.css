@@ -1,12 +1,5 @@
-body {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 10% auto;
-  grid-template-areas:
-    "header header header"
-    "main main main";
-}
-
-nav {
+nav,
+main {
   background-color: #0f172a;
 }
 
@@ -17,12 +10,11 @@ main {
   align-items: center;
   gap: 10px;
   color: var(--color-text);
-  background-color: #0f172a;
 }
 
 form {
   width: 100%;
-  height: 85%;
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +70,7 @@ input:focus,
 }
 
 input:hover,
-.input-textarea:hover{
+.input-textarea:hover {
   transform: scale(1.01);
 }
 
@@ -110,7 +102,7 @@ input:hover,
 
 .socalMediaLink {
   width: 100%;
-  min-height: 60px;
+  min-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,7 +119,6 @@ input:hover,
 @media (max-width: 768px) {
   form {
     width: 90%;
-    height: 90%;
     padding-top: 50px;
   }
 
